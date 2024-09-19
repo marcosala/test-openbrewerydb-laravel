@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BreweryController;
 
 Route::middleware('auth')->group(function () {
-    Route::get('/', [BreweryController::class, 'index'])->name('breweries.index');
+    Route::get('/', [BreweryController::class, 'index'])->name('home-');
     Route::get('/breweries', [BreweryController::class, 'index'])->name('breweries.index');
 });
 
