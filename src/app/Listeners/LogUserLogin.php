@@ -3,14 +3,15 @@
 namespace App\Listeners;
 
 use Illuminate\Auth\Events\Login;
+use App\Services\TokenService;
+
 class LogUserLogin
 {
-    /**
-     * Create the event listener.
-     */
-    public function __construct()
+    protected $tokenService;
+
+    public function __construct(TokenService $tokenService)
     {
-        //
+        $this->tokenService = $tokenService;
     }
 
     /**
@@ -18,6 +19,6 @@ class LogUserLogin
      */
     public function handle(Login $event): void
     {
-        die('login!');
+        $this->tokenService->generateAndSaveToken($event->user->id);
     }
 }
