@@ -10,6 +10,11 @@ php artisan app:create-root-user
 npm install
 npm run build
 ```
+### Esecuzione dei test automatici
+
+```
+php artisan test
+```
 
 ### Utenza
 
@@ -17,8 +22,5 @@ npm run build
 | ------------- |:-------------:|
 | root      | password   |
 
+Accedi all'applicazione visitando [http://localhost:8000](http://localhost:8000/) nel tuo browser.
 
-### Esecuzione dei test automatici
-```
-php artisan test
-```
