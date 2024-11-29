@@ -1,4 +1,5 @@
-## istruzioni per il deploy del progetto
+### istruzioni per il deploy del progetto
+
 ```
 docker-compose up -d
 docker exec -it test-openbrewerydb-laravel bash
@@ -9,3 +10,10 @@ php artisan app:create-root-user
 npm install
 npm run build
 ```
+
+### Utenza
+
+| username  | password |
+| ------------- |:-------------:|
+| root      | password   |
+
