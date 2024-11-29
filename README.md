@@ -17,3 +17,8 @@ npm run build
 | ------------- |:-------------:|
 | root      | password   |
 
+
+### Esecuzione dei test automatici
+```
+php artisan test
+```
